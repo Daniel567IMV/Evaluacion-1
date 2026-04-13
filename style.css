@@ -12,6 +12,7 @@ body {
 }
 
 .site-header {
+  width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #cccccc;
 }
@@ -21,23 +22,20 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  padding: 15px 0;
-  flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #115d44;
-  text-decoration: none;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: none;
 }
 
 .main-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 22px;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2px;
 }
 
 .main-nav a {
@@ -45,10 +43,31 @@ body {
   text-decoration: none;
   font-size: 0.95rem;
   white-space: nowrap;
+  padding: 8px 14px;
+}
+
+.main-nav a.nav-logo {
+  padding: 0;
+  margin-right: 26px;
+}
+
+.nav-logo-img {
+  display: block;
+  width: 64px;
+  height: auto;
+}
+
+.main-nav::-webkit-scrollbar {
+  height: 5px;
+}
+
+.main-nav::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
 }
 
 .main-nav a:hover {
-  color: #115d44;
+  color: #117c47;
 }
 
 .hero-image-wrapper {

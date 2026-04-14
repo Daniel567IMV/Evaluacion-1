@@ -66,11 +66,15 @@ body {
   object-fit: cover;
 }
 
+.hero-image-wrapper {
+  margin: 0;
+}
+
 .section {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 22px auto;
+  margin: 0 auto;
   padding: 20px;
 }
 

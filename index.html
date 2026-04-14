@@ -3,96 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Turismo Alto Biobío</title>
+  <title>Biobío Descubre</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
+      <a href="#home" class="nav-logo">
+        <img src="Logo.png" alt="Biobío Descubre" class="nav-logo-img" />
+      </a>
       <nav class="main-nav">
-        <a href="#home" class="nav-logo">
-          <img src="Logo.png" alt="Turismo Alto Biobío" class="nav-logo-img" />
-        </a>
-        <a href="#home">Inicio</a>
-        <a href="#planifica">Planifica tu viaje</a>
-        <a>Novedades</a>
-        <a href="#mapa">Mapa Turístico</a>
-        <a href="#tienda">Tienda Artesanal</a>
-        <a href="#equipo">Equipo Turismo</a>
-        <a href="#servicios">Servicios Turísticos Locales</a>
+        <button type="button">Inicio</button>
+        <button type="button">Servicios</button>
+        <button type="button">Destinos</button>
+        <button type="button">Beneficios</button>
+        <button type="button">Contacto</button>
       </nav>
+      <button type="button" class="nav-cta">Regístrate</button>
     </div>
   </header>
-  <div class="hero-image-wrapper">
-    <img src="alto biobio todo el año.jpg" alt="Paisaje Alto Biobío" class="hero-image" />
-  </div>
+
+  <section id="home" class="hero-section">
+    <div class="hero-image-wrapper">
+      <img src="portada-saltos-del-laja.jpg" alt="Saltos del Laja" class="hero-image" />
+    </div>
+    <div class="hero-copy container">
+      <h1>Biobío Descubre</h1>
+      <p>Una plataforma sencilla para encontrar excursiones, guías locales y alojamientos sustentables en la Región del Biobío.</p>
+      <button class="button button-primary">Ver servicios</button>
+    </div>
+  </section>
+
   <main>
-    <section id="actividades" class="section activities-section">
+    <section id="servicios" class="section features-section">
       <div class="container">
-        <h2>Actividades</h2>
-        <div class="activity-grid">
-          <article class="activity-card">
-            <img src="visitar el museo pewenche.jpg" alt="Visitar el Museo Pewenche" class="activity-image" />
-            <h3>Visitar el Museo Pewenche</h3>
+        <div class="section-header">
+          <p class="section-label">Servicios</p>
+          <h2>Todo lo que necesitas para planificar tu viaje</h2>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card">
+            <h3>Rutas personalizadas</h3>
+            <p>Encuentra itinerarios diseñados según tus gustos, duración y nivel de aventura.</p>
           </article>
-          <article class="activity-card">
-            <img src="cabalgata_pewenche.jpg" alt="Cabalgata pewenche" class="activity-image" />
-            <h3>Cabalgata pewenche</h3>
+          <article class="feature-card">
+            <h3>Guías locales</h3>
+            <p>Reserva experiencias con expertos de la zona que conocen el territorio y la cultura.</p>
           </article>
-          <article class="activity-card">
-            <img src="reserva nacional ralco.jpg" alt="Reserva Nacional Ralco" class="activity-image" />
-            <h3>Reserva Nacional Ralco</h3>
+          <article class="feature-card">
+            <h3>Alojamientos ecológicos</h3>
+            <p>Elige hospedajes sostenibles que apoyan a comunidades y protegen el entorno.</p>
           </article>
-          <article class="activity-card">
-            <img src="rafting en el reio bio bio.jpg" alt="Rafting en el río Biobío" class="activity-image" />
-            <h3>Rafting en el río Biobío</h3>
+          <article class="feature-card">
+            <h3>Ofertas exclusivas</h3>
+            <p>Accede a descuentos y beneficios para usuarios tempranos de la plataforma.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="novedades" class="section news-section">
+    <section id="destinos" class="section destinations-section">
       <div class="container">
-        <h2>Novedades</h2>
-        <div class="news-grid">
-          <article class="news-card">
-            <img src="Conoce a los encargados de turismo.png" alt="Conoce a los encargados de turismo" class="news-image" />
-            <h3>Conoce a los encargados de turismo</h3>
+        <div class="section-header">
+          <p class="section-label">Destinos</p>
+          <h2>Explora la diversidad de Biobío</h2>
+        </div>
+        <div class="destinos-grid">
+          <article class="destino-card">
+            <img src="playa-de-Dichato.jpg" alt="Playa Dichato" />
+            <div>
+              <h3>Dichato</h3>
+              <p>Playas, gastronomía y espacios familiares cerca de la costa.</p>
+            </div>
           </article>
-          <article class="news-card">
-            <img src="Revisa Algunas fotos del wetripantu 2025.png" alt="Revisa algunas fotos del wetripantu 2025" class="news-image" />
-            <h3>Revisa algunas fotos del wetripantu 2025</h3>
+          <article class="destino-card">
+            <img src="playa blanca.jpg" alt="Playa Blanca" />
+            <div>
+              <h3>Playa Blanca</h3>
+              <p>Arenas claras y olas suaves para disfrutar un día de descanso.</p>
+            </div>
           </article>
-          <article class="news-card">
-            <img src="Evento mustangmania.jpg" alt="Evento mustangmania" class="news-image" />
-            <h3>Evento mustangmania</h3>
+          <article class="destino-card">
+            <img src="Antuco.jfif" alt="Antuco" />
+            <div>
+              <h3>Antuco</h3>
+              <p>Montañas, nevados y rutas de trekking al pie del volcán.</p>
+            </div>
+          </article>
+          <article class="destino-card">
+            <img src="alto biobio todo el año.jpg" alt="Alto Biobío" />
+            <div>
+              <h3>Alto Biobío</h3>
+              <p>Naturaleza pura, cultura mapuche y turismo sustentable en la cordillera.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
-    <section class="section alcance-section">
-      <div class="alcance-bg" style="background-image: url('imagen alcance.png');">
-        <div class="alcance-overlay">
-          <div class="alcance-row">
-            <div class="alcance-item">Rutas</div>
-            <div class="alcance-item">Camas disponibles</div>
-            <div class="alcance-item">Zonas camping</div>
-            <div class="alcance-item">Visitas al año</div>
+
+    <section id="beneficios" class="section benefits-section">
+      <div class="container">
+        <div class="benefits-content">
+          <div>
+            <p class="section-label">Beneficios</p>
+            <h2>Por qué elegir Biobío Descubre</h2>
+            <p>La plataforma facilita el acceso a experiencias responsables, impulsa el comercio local y entrega información clara para viajar seguro.</p>
           </div>
+          <ul class="benefit-list">
+            <li>Conexión directa con emprendedores de la región.</li>
+            <li>Tour guiados certificados y alojamientos amigables con el medio ambiente.</li>
+            <li>Ofertas exclusivas y contenido actualizado.</li>
+          </ul>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <p>Información turística</p>
-          <p>+569 7526 7483</p>
-          <p>Ralco, Alto Biobío</p>
+
+    <section id="registro" class="section registration-section">
+      <div class="container registration-card">
+        <div>
+          <h2>Únete a la comunidad de Biobío Descubre</h2>
+          <p>Regístrate hoy y recibe novedades, descuentos y acceso anticipado a nuevas experiencias.</p>
         </div>
-        <div class="footer-right">
-          <p>Contacto</p>
-          <p>Rigoberto Ramirez</p>
-          <p>rigoberto.ramirez@munialtobiobio.cl</p>
+        <button class="button button-primary">Regístrate ahora</button>
+      </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+      <div class="footer-inner container">
+        <div>
+          <h3>Contacto</h3>
+          <p>+569 7861 3981</p>
+          <p>daniel.meliman@inacapmail.cl</p>
+          <p>San Pedro de la Paz, Región del Biobío</p>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <p>Facebook · Instagram · Twitter</p>
         </div>
       </div>
     </footer>
